@@ -1,12 +1,17 @@
 $( document ).ready(function() {
 
     var scrollFunction = function() {
-        var test = document.getElementById('test');
+        var content = document.getElementById('page-content');
         var footer = document.getElementById('page-footer');
         var y = window.scrollY;
         if (y >= 100) {
-            test.classList.remove('hide');
-            test.classList.add("fade-in");
+            content.classList.remove('hide');
+            content.classList.add("fade-in");
+            setTimeout(
+                function(){
+                    footer.classList.remove('hide');
+                    footer.classList.add('fade-in');
+                }, 400);
         }
 
     };

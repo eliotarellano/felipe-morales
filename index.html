@@ -17,26 +17,26 @@
     <body>
         <header class="header">
             <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-                <img class="navbar-brand img-logo mt-4 ml-5" alt="logo" src="./src/images/felipemorales.png">
+                <a href="#"><img class="navbar-brand img-logo mt-4 ml-5" alt="logo" src="./src/images/felipemorales.png"></a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-                  <span class="navbar-toggler-icon"></span>
+                    <img class="ml-3" alt="locker" src="./src/images/menu.png">
                 </button>
                 <div class="collapse navbar-collapse justify-content-end" id="navbarText">
-                    <ul class="navbar-nav mr-md-5 mr-sm-0 text-center">
+                    <ul class="navbar-nav mr-md-5 mr-sm-0 text-right">
                         <li class="nav-item mr-4">
                             <a class="nav-link custom-navlink" href="#">TIENDA</a>
                         </li>
                         <li class="nav-item mr-4">
                             <a class="nav-link custom-navlink" href="#">0 <img alt="locker" src="./src/images/locker.png"></a>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item menu-toggler">
                             <a class="nav-link custom-navlink" href="#">MENÚ <img class="ml-3" alt="locker" src="./src/images/menu.png"></a>
                         </li> 
                     </ul>
                 </div>
               </nav>
         </header>
-        <div id="lorem-carousel" class="carousel slide custom-carousel" data-ride="carousel">
+        <div id="slider" class="carousel slide" data-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active">
                     <img class="carousel-img" src="./src/images/slide.jpg" alt="">
@@ -60,118 +60,202 @@
                     </div>   
                 </div>
                 <ul class="carousel-indicators carousel-indicators-numbers mb-5">
-                    <li data-target="#lorem-carousel" data-slide-to="0" class=" active">01</li> | 
-                    <li data-target="#lorem-carousel" data-slide-to="1" class="">02</li> |
-                    <li data-target="#lorem-carousel" data-slide-to="2" class="">03</li>
+                    <li data-target="#slider" data-slide-to="0" class=" active">01</li> | 
+                    <li data-target="#slider" data-slide-to="1" class="">02</li> |
+                    <li data-target="#slider" data-slide-to="2" class="">03</li>
                 </ul>
             </div>
-
         </div>
-        <div id="test" class="container container-content hide">
-            <div class="row">
-                <div class="col-sm-4">
-                    <h2>About Me</h2>
-                    <h5>Photo of me:</h5>
-                    <div class="fakeimg">Fake Image</div>
-                    <p>Some text about me in culpa qui officia deserunt mollit anim..</p>
-                    <h3>Some Links</h3>
-                    <p>Lorem ipsum dolor sit ame.</p>
-                    <ul class="nav nav-pills flex-column">
+        <div id="page-content" class="container-fluid container-content pt-5 hide">
+            <div class="page-presentation pt-5 pb-5">
+                <div class="row d-flex justify-content-center pb-5">
+                    <div class="col-md-3 presentation-text offset-md-1">
+                        <div class="col-md-12 pt-5 pl-5 pr-5">
+                            <h5 class="page-subtitle">VIÑA</h5>
+                            <h2 class="page-title-secondary">F. MORALES</h2>
+                            <p>Nuestra viña recibe su nombre del Cacique Picunche Andetelmo, “Felipe Morales”, señor de las tierras que hoy albergan nuestro terroir, al pie de la Cordillera de los Andes, en el Valle de Alto Maipo. Su carácter visionario y pacifico le hizo ganar el respeto de los conquistadores españoles dando origen a una historia de apertura e intercambio que perdura hasta nuestros tiempos. Hoy, el espíritu de Andetelmo sigue vivo en nuestros vinos que expresan toda la nobleza y calidad de un terroir único.</p>
+                        </div>
+                        <div class="col-md-12 pb-5 pl-5 pr-5">
+                            <a class="page-title-button" href="#">LEER MÁS <img alt="" src="./src/images/arrow.png"></a>
+                        </div>
+                    </div>
+                    <div class="col-md-7 pt-md-5 pl-md-5 pr-md-5">
+                        <img class="presentation-img" alt="" src="./src/images/viña.jpg">
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-12 page-reco  form-inline d-flex justify-content-center pt-5 pb-5">
+                <div class="col-md-12 d-flex justify-content-center pb-5">
+                    <h1 class="title-reco">Reconocimientos</h1>
+                </div>
+                <div id="reco-slider" class="carousel slide col" data-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-md-12 d-flex justify-content-center">
+                                        <div class="col-md-6 carousel-img-container mr-1 pt-5 pb-5 form-inline">
+                                            <div class="col-md-3">
+                                                <img class="carousel-img-reco ml-2" src="./src/images/doñadominga.png">
+                                            </div>
+                                            <div class="col-md-6 align-left">
+                                                <img class="mb-2" src="./src/images/crown.png" alt="">
+                                                <h5 class="carousel-title-reco">F MORALES, CABERNET <br/> SAUVIGNON 2003</h5>
+                                                <br/>
+                                                <label class="carousel-label-reco float-left"><b>95 Puntos</b></label><br/>
+                                                <label class="carousel-label-reco float-left">James Suckling</label><br/>
+                                                <label class="carousel-label-reco float-left">USA 2019</label>
+                                                <img class="carousel-logo" src="./src/images/jamessuckling.png" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-md-12 d-flex justify-content-center">
+                                        <div class="col-md-6 carousel-img-container mr-1 pt-5 pb-5 form-inline">
+                                            <div class="col-md-3">
+                                                <img class="carousel-img-reco ml-2" src="./src/images/doñadominga.png">
+                                            </div>
+                                            <div class="col-md-6 align-left">
+                                                <img class="mb-2" src="./src/images/crown.png" alt="">
+                                                <h5 class="carousel-title-reco">F MORALES, CABERNET <br/> SAUVIGNON 2003</h5>
+                                                <br/>
+                                                <label class="carousel-label-reco float-left"><b>95 Puntos</b></label><br/>
+                                                <label class="carousel-label-reco float-left">James Suckling</label><br/>
+                                                <label class="carousel-label-reco float-left">USA 2019</label>
+                                                <img class="carousel-logo" src="./src/images/jamessuckling.png" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-md-12 d-flex justify-content-center">
+                                        <div class="col-md-6 carousel-img-container mr-1 pt-5 pb-5 form-inline">
+                                            <div class="col-md-3">
+                                                <img class="carousel-img-reco ml-2" src="./src/images/doñadominga.png">
+                                            </div>
+                                            <div class="col-md-6 align-left">
+                                                <img class="mb-2" src="./src/images/crown.png" alt="">
+                                                <h5 class="carousel-title-reco">F MORALES, CABERNET <br/> SAUVIGNON 2003</h5>
+                                                <br/>
+                                                <label class="carousel-label-reco float-left"><b>95 Puntos</b></label><br/>
+                                                <label class="carousel-label-reco float-left">James Suckling</label><br/>
+                                                <label class="carousel-label-reco float-left">USA 2019</label>
+                                                <img class="carousel-logo" src="./src/images/jamessuckling.png" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <ul class="carousel-indicators carousel-indicators-numbers-reco">
+                            <li data-target="#reco-slider" data-slide-to="0" class=" active">01 </li> | 
+                            <li data-target="#reco-slider" data-slide-to="1" class="">02</li> |
+                            <li data-target="#reco-slider" data-slide-to="2" class="">03</li>
+                        </ul>
+                    </div>
+                </div>     
+            </div>
+            <div class="page-about">
+                <div class="row">
+                    <div class="col-md-6 col-sm-12 page-about-s1 p-md-5 p-sm-0">
+                        <div class="col-md-12 pt-5 pl-5 pr-5">
+                            <h5 class="page-subtitle">VISITA</h5>
+                            <h2 class="page-title-secondary">LA TIENDA</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ligula ullamcorper malesuada proin libero nunc consequat. Lorem dolor sed viverra ipsum nunc aliquet bibendum. Neque sodales ut etiam sit amet nisl.</p>
+                        </div>
+                        <div class="col-md-12 pb-5 pl-5 pr-5">
+                            <a href="#"><img alt="" src="./src/images/arrow.png"></a>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-12 page-about-s2 p-md-5 p-sm-0">
+                        <div class="col-md-12 pt-5 pl-5 pr-5">
+                            <h5 class="page-subtitle">CONOCE NUESTROS TOURS</h5>
+                            <h2 class="page-title-secondary">ENOTURISMO EN MAIPU</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ligula ullamcorper malesuada proin libero nunc consequat. Lorem dolor sed viverra ipsum nunc aliquet bibendum. Neque sodales ut etiam sit amet nisl.</p>
+                        </div>
+                        <div class="col-md-12 pb-5 pl-5 pr-5">
+                            <a href="#"><img alt="" src="./src/images/arrow.png"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="page-footer" class="footer hide pt-5 pb-4">
+            <div class="col-md-12 form-inline d-flex justify-content-center">
+                <div class="col-md-2 mb-4">
+                    <ul class="navbar-nav">
                         <li class="nav-item">
-                        <a class="nav-link active" href="#">Active</a>
+                            <a class="nav-link navlink-footer" href="#">Identidad</a>
                         </li>
                         <li class="nav-item">
-                        <a class="nav-link" href="#">Link</a>
+                            <a class="nav-link navlink-footer" href="#">Vinos</a>
                         </li>
                         <li class="nav-item">
-                        <a class="nav-link" href="#">Link</a>
+                            <a class="nav-link navlink-footer" href="#test">Reconocimiento</a>
                         </li>
                         <li class="nav-item">
-                        <a class="nav-link disabled" href="#">Disabled</a>
+                            <a class="nav-link navlink-footer" href="#test">Enoturismo</a>
+                        </li> 
+                        <li class="nav-item">
+                            <a class="nav-link navlink-footer" href="#test">Terroir</a>
+                        </li> 
+                    </ul>
+                </div>
+                <div class="col-md-2 mt-2 mb-4">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link navlink-footer" href="#">Noticias</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link navlink-footer" href="#">Tienda</a>
                         </li>
                     </ul>
-                    <hr class="d-sm-none">
                 </div>
-                <div class="col-sm-8">
-                    <h2>TITLE HEADING</h2>
-                    <h5>Title description, Dec 7, 2017</h5>
-                    <div class="fakeimg">Fake Image</div>
-                    <p>Some text..</p>
-                    <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
-                    <br>
-                    <h2>TITLE HEADING</h2>
-                    <h5>Title description, Sep 2, 2017</h5>
-                    <div class="fakeimg">Fake Image</div>
-                    <p>Some text..</p>
-                    <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+                <div class="col-md-2 mt-2 mb-4 mb-xs-4">
+                    <span class="footer-span">¿DÒNDE ESTAMOS?</span><br/>
+                    <span class="footer-span-light">Casilla 420, Pirque</span><br/>
+                    <span class="footer-span-light">Santiago de Chile</span><br/>
+                    <br/>
+                    <span class="footer-span">TELÉFONO</span><br/>
+                    <span class="footer-span-light">+56 2 2854 7023</span><br/>
+                    <br/>
+                    <span class="footer-span">EMAIL</span><br/>
+                    <span class="footer-span-light footer-span-email">contacto@principal.cl</span>
                 </div>
-            </div>
-        </div>
-        <div id="page-footer" class="col-md-12 footer mt-5 mb-5 d-flex justify-content-center fade-in">
-            <div class="col-md-2 mt-2 mb-4">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link navlink-footer" href="#">Identidad</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link navlink-footer" href="#">Vinos</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link navlink-footer" href="#test">Reconocimiento</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link navlink-footer" href="#test">Enoturismo</a>
-                    </li> 
-                    <li class="nav-item">
-                        <a class="nav-link navlink-footer" href="#test">Terroir</a>
-                    </li> 
-                </ul>
-            </div>
-            <div class="col-md-2 mt-2 mb-4">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link navlink-footer" href="#">Noticias</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link navlink-footer" href="#">Tienda</a>
-                    </li>
-                </ul>
-            </div>
-            <div class="col-md-2 mt-2 mb-4">
-                <span class="footer-span">¿DÒNDE ESTAMOS?</span><br/>
-                <span class="footer-span-light">Casilla 420, Pirque</span><br/>
-                <span class="footer-span-light">Santiago de Chile</span><br/>
-                <br/>
-                <span class="footer-span">TELÉFONO</span><br/>
-                <span class="footer-span-light">+56 2 2854 7023</span><br/>
-                <br/>
-                <span class="footer-span">EMAIL</span><br/>
-                <span class="footer-span-light footer-span-email">contacto@principal.cl</span>
-            </div>
-            <div class="col-md-2 mt-2 mb-4 text-center">
-                <span class="footer-span-light">2019 Viña El Principal</span><br/>
-                <span class="footer-span-light">Todos los derechos reservados</span><br/>
-                <div class="rrss-container col-md-12 mt-4">
-                    <div class="col-md-3">
-                        <a class="rrss-button"><i class="fab fa-facebook-f"></i></a>
-                    </div>
-                    <div class="col-md-3">
-                        <a class="rrss-button"><i class="fab fa-twitter"></i></a>
-                    </div>
-                    <div class="col-md-3">
-                        <a class="rrss-button"><i class="fab fa-instagram"></i></a>
-                    </div>
-                    <div class="col-md-3">
-                        <a class="rrss-button"><i class="fab fa-youtube"></i></a>
+                <div class="col-md-2 mt-2 mb-4 text-center">
+                    <span class="footer-span-light">2019 Viña El Principal</span><br/>
+                    <span class="footer-span-light">Todos los derechos reservados</span><br/>
+                    <div class="rrss-container col-md-12 mt-4">
+                        <div class="col-md-3">
+                            <a class="rrss-button"><i class="fab fa-facebook-f"></i></a>
+                        </div>
+                        <div class="col-md-3">
+                            <a class="rrss-button"><i class="fab fa-twitter"></i></a>
+                        </div>
+                        <div class="col-md-3">
+                            <a class="rrss-button"><i class="fab fa-instagram"></i></a>
+                        </div>
+                        <div class="col-md-3">
+                            <a class="rrss-button"><i class="fab fa-youtube"></i></a>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="col-md-2 mt-2 mb-4 text-center">
-                <div class="col-md-12">
-                    <img class="certificate-img" src="./src/images/certificate.png" alt="">
-                </div>
-                <div class="col-md-12 mt-4">
-                    <img class="certificate-img" src="./src/images/wimoderation.png" alt="">
+                <div class="col-md-2 mt-2 mb-4 text-center">
+                    <div class="col-md-12">
+                        <img class="certificate-img" src="./src/images/certificate.png" alt="">
+                    </div>
+                    <div class="col-md-12 mt-4">
+                        <img class="certificate-img" src="./src/images/wimoderation.png" alt="">
+                    </div>
                 </div>
             </div>
         </div>

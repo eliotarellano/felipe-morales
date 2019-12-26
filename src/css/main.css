@@ -36,7 +36,24 @@ p {
 }
 
 @media (max-width: 576px) {
-
+    .navbar-toggler {
+        border: 0px;
+    }
+    .menu-toggler{
+        display: none;
+    }
+    .presentation-text {
+        position: static !important;
+        background-color: #242527;
+     }
+     .presentation-img {
+        max-width: 100% !important;
+        position: static !important;
+    }
+    .footer {
+        text-align: center;
+        background-position-y: 0px !important;
+    }
 }
 
 .carousel-indicators-numbers {
@@ -81,20 +98,108 @@ p {
     content: “ “;
 }
 
-
 .page-subtitle {
     color: #fff;
     text-transform: uppercase;
     font-weight: lighter;
 }
 
-.fakeimg {
-    height: 200px;
-    background: #aaa;
+.page-title-secondary {
+    font-weight: 300;
+}
+
+.page-title-button {
+    color: #f67f07 !important;
+    cursor: pointer;
+}
+
+.container-content {
+    padding-top: 8rem !important;
+}
+
+.presentation-text {
+   position: relative;
+   left: 200px;
+   bottom: 80px ;
+   z-index: 2;
+   background-color: #242527;
+}
+
+.presentation-img {
+    max-width: 80%;
+    position: relative;
+    right: 100px;
+}
+
+.page-reco {
+    background-blend-mode: multiply;
+    background-color: #303030;
+    background-image:  url('/src/images/viñabw.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.title-reco {
+    color: #fff;
+    font-weight: 300;
+}
+
+.carousel-img-container {
+    background-color: #b4b3b3;
+    width: 100%;
+}
+
+.carousel-img-reco {
+    height: 20rem !important;
+}
+
+.carousel-title-reco {
+    color: #000000;
+    font-weight: 600;
+}
+
+.carousel-label-reco {
+    color: #000000;
+}
+
+.carousel-logo {
+    width: 80%;
+}
+
+.carousel-indicators-numbers-reco {
+    color: #fff !important;
+    font-weight: 50;
+    z-index: 2;
+}
+
+.carousel-indicators-numbers-reco li {
+    text-indent: 0;
+    color: #fff;
+    border-top: unset;
+    margin-bottom: unset;
+}
+
+.carousel-indicators-numbers-reco .active {
+    width: auto;
+    border-bottom: 2px solid white;
+    padding-bottom: 20px;
+}
+
+.page-about-s1 {
+    background-image: linear-gradient(90deg, #242527 0%, transparent 100%), url(/src/images/tour-1.jpg);
+}
+
+.page-about-s2 {
+    background-image: linear-gradient(90deg, #242527 0%, transparent 100%), url(/src/images/tour-2.jpg);
 }
 
 .footer {
-    background-color: #242527;
+    background-blend-mode: multiply;
+    background-color: #202020;
+    background-image:  url('/src/images/viñabw.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position-y: 373px;
 }
 
 .navlink-footer {
@@ -151,7 +256,7 @@ p {
 }
 
 .hide {
-    display: none;
+    opacity: 0;
 }
 
 .fade-in {

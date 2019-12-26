@@ -4,7 +4,7 @@
   "description": "viña felipe morales",
   "main": "index.js",
   "scripts": {
-    "serve": "browser-sync start --server --files 'dist/css/*.css, **/*.html'",
+    "serve": "browser-sync start --server --files'",
     "start": "run-p serve"
   },
   "author": "Eliot Arellano",
