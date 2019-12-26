@@ -13,8 +13,8 @@ $( document ).ready(function() {
                     footer.classList.add('fade-in');
                 }, 400);
         }
-
     };
       
     window.addEventListener("scroll", scrollFunction);
+
 });
